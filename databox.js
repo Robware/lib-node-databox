@@ -13,3 +13,5 @@ exports.NewDataSourceMetadata   = coreStore.NewDataSourceMetadata;
 exports.DataSourceMetadataToHypercat = coreStore.DataSourceMetadataToHypercat;
 exports.HypercatToSourceDataMetadata = coreStore.HypercatToSourceDataMetadata;
 exports.requestToken = require('./lib/utils.js').requestToken;
+
+exports.LiveMode = !!(process.env.DATABOX_VERSION)
